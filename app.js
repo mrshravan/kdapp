@@ -25,9 +25,11 @@ Ext.application({
 
     requires: [
         'Ext.MessageBox',
+        'Ext.TitleBar',
+		'Ext.carousel.Carousel'
     ],
 
-    views: ['Viewport','Main','Navigation','ReadDiary','WriteDiary'],
+    views: ['Viewport','Main','Navigation','ReadDiary','WriteDiary','Login','MainHomeTab'],
 	stores: ['MenuItems'],
     models: ['MenuItems'],			
 	controllers : ['App'],

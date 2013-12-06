@@ -1,6 +1,6 @@
 Ext.define('kdApp.view.Viewport', {
 				extend: 'Ext.Container',
-				xtype: 'app_viewport',
+				xtype: 'viewporttoppage',
 				requires: [
 				'Ext.TitleBar'
 				],

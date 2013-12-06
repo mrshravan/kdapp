@@ -1,29 +1,88 @@
-Ext.create('kdApp.view.Login', {
-    //fullscreen: true,
-    extend: 'Ext.Panel',
-    requires: [
-        'Ext.MessageBox',
-        'Ext.form.Panel',
-        'Ext.form.FieldSet',
-        'Ext.field.Text'
-        
-    ],
-    alias: 'widget.simpeleview',
-    items: [
-        {
-               xtype: 'button',
-               text: 'Show Overlay',
-               listeners: {
-                  tap: function(button){
-                     var overlay = Ext.create('Ext.Panel', {
-                                                     height: 100,
-                                                     width: 300,
-                                                     html: 'Panel as Overlay'
-                                           });
-                     overlay.showBy(button);
-                  }
-               }
+Ext.define('kdApp.view.Login', {
+    extend: 'Ext.form.Panel',
+    alias: "widget.loginview",
+    //xtype: 'loginxtype',
+    requires: ['Ext.form.FieldSet', 'Ext.form.Password', 'Ext.Label', 'Ext.Img', 'Ext.util.DelayedTask'],
+    config: {
+        title: 'Login',
+        items: [
+            {
+                xtype: 'image',               
+                //src: Ext.Viewport.getOrientation() == 'portrait' ? 'resources/icons/book.png' : 'resources/icons/book.png',
+                //style: Ext.Viewport.getOrientation() == 'portrait' ? 'width:100px;height:100px;margin:auto' : 'width:80px;height:80px;margin:auto'
+            },
+            {
+                xtype: 'label',
+                html: 'Login failed. Please enter the correct credentials.',
+                itemId: 'signInFailedLabel',
+                hidden: true,
+                hideAnimation: 'fadeOut',
+                showAnimation: 'fadeIn',
+                style: 'color:#990000;margin:5px 0px;'
+            },
+            {
+                xtype: 'fieldset',
+                title: 'Login',
+                items: [
+                    {
+                        xtype: 'textfield',
+                        placeHolder: 'Username',
+                        itemId: 'userNameTextField',
+                        name: 'userNameTextField',
+                        required: true
+                    },
+                    {
+                        xtype: 'passwordfield',
+                        placeHolder: 'Password',
+                        itemId: 'passwordTextField',
+                        name: 'passwordTextField',
+                        required: true
+                    }
+                ]
+            },
+            {
+                xtype: 'button',
+                itemId: 'logInButton',
+                ui: 'action',
+                padding: '10px',
+                text: 'Log In'
+            }
+         ],
+        listeners: [{
+            delegate: '#logInButton',
+            event: 'tap',
+            fn: 'onLogInButtonTap'
+        }]
+    },
+    onLogInButtonTap: function () {
 
-        }
-    ]
+        var me = this,
+            usernameField = me.down('#userNameTextField'),
+            passwordField = me.down('#passwordTextField'),
+            label = me.down('#signInFailedLabel'),
+            username = usernameField.getValue(),
+            password = passwordField.getValue();
+
+        label.hide();
+
+        // Using a delayed task in order to give the hide animation above
+        // time to finish before executing the next steps.
+        var task = Ext.create('Ext.util.DelayedTask', function () {
+
+            label.setHtml('');
+
+            me.fireEvent('signInCommand', me, username, password);
+
+            usernameField.setValue('');
+            passwordField.setValue('');
+        });
+
+        task.delay(500);
+
+    },
+    showSignInFailedMessage: function (message) {
+        var label = this.down('#signInFailedLabel');
+        label.setHtml(message);
+        label.show();
+    }
 });

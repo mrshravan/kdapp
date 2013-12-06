@@ -1,8 +1,9 @@
 Ext.define('kdApp.view.Viewport', {
 				extend: 'Ext.Container',
-				xtype: 'app_viewport',
+				xtype: 'viewportpage',
 				requires: [
-				'Ext.TitleBar'
+				'Ext.TitleBar',
+				'Ext.carousel.Carousel'
 				],
 				config: {
 								fullscreen: true,
