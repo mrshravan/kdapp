@@ -13,22 +13,32 @@ Ext.define('kdApp.controller.App',{
 												navigation : {
 																itemtap : function(list, index, target, record){
 																				this.toggleNav();
-																},
-																disclose: 'showDetail'
+																				var mId = record.get('menuItemId');
+																				var comp = Ext.ComponentQuery.query('formpanel')[0];
+																				console.log(comp);
+																				comp.setHtml('');
+																				if(mId =='wd'){
+																					
+																					//comp.getActiveItem().destroy();
+																					comp.setActiveItem('writediaryview');						
+																				}else if(mId=='rd'){
+																					//comp.setHtml('Read Diary');
+																					comp.getActiveItem().destroy();						
+																					comp.setActiveItem('readdiaryview');																					
+																				}else if(mId=='sd'){
+																					comp.getActiveItem().destroy();
+																					comp.setHtml('Share Diary');
+																											
+																				}
+																}
+
 												},
 												
 												
         
 								}
 				},
-				showDetail: function(list, record) {
-					// this.getMain().push({
-						// xtype: 'main',
-						// title: record.get('menuItem'),
-						
-					// });
-					Ext.Msg.alert('You selected ' + this.getMain());
-				},
+		
 				
 				/**
 				 * Toggle the slide navogation view

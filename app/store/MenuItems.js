@@ -7,9 +7,10 @@ Ext.define('kdApp.store.MenuItems', {
             return record.get('gruoupName');
         },
         data: [
-            { menuItem: "Write Diary", gruoupName: "Diary" },
-            { menuItem: "Read Diary", gruoupName: "Diary" },
-            { menuItem: "Share Diary", gruoupName: "Diary" },
+            { menuItemId:"hme", menuItem:"Kids Diary", gruoupName: "About" },
+            { menuItemId:"wd", menuItem: "Write Diary", gruoupName: "Diary" },
+            { menuItemId:"rd", menuItem: "Read Diary", gruoupName: "Diary" },
+            { menuItemId:"sd", menuItem: "Share Diary", gruoupName: "Diary" },
         ]
     }
 });

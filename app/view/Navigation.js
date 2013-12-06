@@ -7,9 +7,8 @@ Ext.define('kdApp.view.Navigation', {
 					cls : 'nav-list',
 					itemTpl : '{menuItem}',
 					grouped: true,
-					itemTpl: '{menuItem} {gruoupName}',
+					itemTpl: '{menuItem}',
 					store: 'MenuItems',
-					onItemDisclosure: true,
 					// listeners: {
 									// select: function(view, record) {
 										// Ext.Msg.alert('You selected ' + record.get('menuItem'));

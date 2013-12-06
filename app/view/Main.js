@@ -1,19 +1,19 @@
 Ext.define('kdApp.view.Main', {
 				extend: 'Ext.TabPanel',
+				views: ['Login'],
 				xtype: 'main',
+				
 				config: {
 								tabBarPosition : 'bottom',
 								items : [{
 												title : 'Home',
 												iconCls : 'home',
 												xtype : 'formpanel',
-												html : ['This is a very simple example of Facebook style slide navigation. ',
-												'The component is mostly developed with CSS3 animations and a small bit of javascript code. ',
-												'Use it freely in your Sencha Touch application'].join(''),
-												styleHtmlContent : true,
+												html : '<Center> <br/><br/><br/><br/><br/>Sign in <br/><br/><br/><i class="fa fa-facebook-square fa-3x"/> &nbsp<i class="fa fa-twitter fa-lg"/>',
+												
 												items : [{
 																xtype : 'titlebar',
-																title : 'Slide Nav',
+																//title : 'Slide Nav',
 																docked : 'top',
 																items :[{
 																				align : 'left',
@@ -22,13 +22,15 @@ Ext.define('kdApp.view.Main', {
 																				ui : 'plain'
 																},{
 																		xtype : 'label',
-																		html : 'Kids Diary',
-																		// centered: 'true'
+																		html : 'Kids Diary',	
 																		
-																		
-																}]
-												}]
+																}
+																]
+														}]
+														
 								}
+								,
+																
 								
 								]
 				}

@@ -24,10 +24,10 @@ Ext.application({
     name: 'kdApp',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
     ],
 
-    views: ['Viewport','Main','Navigation'],
+    views: ['Viewport','Main','Navigation','ReadDiary','WriteDiary'],
 	stores: ['MenuItems'],
     models: ['MenuItems'],			
 	controllers : ['App'],
