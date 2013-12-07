@@ -14,10 +14,10 @@
 //@require @packageOverrides
 
 //<debug>
-Ext.Loader.setPath({
-    'Ext': 'touch/src',
-    'kdApp': 'app'
-});
+//Ext.Loader.setPath({
+//    'Ext': 'touch/src',
+//    'kdApp': 'app'
+//});
 //</debug>
 
 Ext.application({
