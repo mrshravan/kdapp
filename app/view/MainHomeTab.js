@@ -5,15 +5,7 @@ Ext.define('kdApp.view.MainHomeTab', {
     config: {
         //title: 'Login',
         items: [ 
-        	{
-                xtype: 'label',
-                html: 'Login failed. Please enter the correct credentials.',
-                itemId: 'signInFailedLabel',
-                hidden: true,
-                hideAnimation: 'fadeOut',
-                showAnimation: 'fadeIn',
-                style: 'color:#990000;margin:5px 0px;'
-            },         
+        	        
             {
                 xtype: 'fieldset',
                 title: 'Login',
