@@ -12,7 +12,7 @@ Ext.define('kdApp.view.ReadDiary', {
 			items: [
 				{
 					xtype: 'component',
-					html: '<center><img height="10%" width="100%"  src="./resources/images/nitya.jpg" /></center>',
+					html: '<center><img height="60%" width="100%"  src="./resources/images/nitya.jpg" /></center>',
 			
 				},
 				{
