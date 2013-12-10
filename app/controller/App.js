@@ -3,12 +3,11 @@ Ext.define('kdApp.controller.App',{
 				config:{
 								refs:{
 												main : 'main',
-												navigation : 'navigation',
 												navBtn : 'button[name="nav_btn"]'
 								},				
 								control : {
 												navBtn : {
-																tap : 'toggleNav'
+																tap : 'toggleNav',
 												},												
 												navigation : {
 																itemtap : function(list, index, target, record){
@@ -18,9 +17,9 @@ Ext.define('kdApp.controller.App',{
 																				console.log(comp);
 																				comp.setHtml('');
 																				if(mId =='wd'){
-																					
-																					//comp.getActiveItem().destroy();
+																					comp.getActiveItem().destroy();
 																					comp.setActiveItem('writediaryview');
+
 																				}else if(mId=='rd'){
 																					//comp.setHtml('Read Diary');
 																					comp.getActiveItem().destroy();						
