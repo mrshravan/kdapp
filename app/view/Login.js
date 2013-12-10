@@ -63,13 +63,13 @@ Ext.define('kdApp.view.Login', {
             username = usernameField.getValue(),
             password = passwordField.getValue();
 
-        label.hide();
+        //label.hide();
 
         // Using a delayed task in order to give the hide animation above
         // time to finish before executing the next steps.
         var task = Ext.create('Ext.util.DelayedTask', function () {
 
-            label.setHtml('');
+            //label.setHtml('');
 
             me.fireEvent('signInCommand', me, username, password);
 

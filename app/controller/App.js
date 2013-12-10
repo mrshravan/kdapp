@@ -16,7 +16,10 @@ Ext.define('kdApp.controller.App',{
 																				var comp = Ext.ComponentQuery.query('mainhometab')[0];
 																				console.log(comp);
 																				comp.setHtml('');
-																				if(mId =='wd'){
+																				if(mId == 'hme'){
+																					comp.getActiveItem().destroy();
+																					comp.setActiveItem('mainhometab');
+																				}else if(mId =='wd'){
 																					comp.getActiveItem().destroy();
 																					comp.setActiveItem('writediaryview');
 

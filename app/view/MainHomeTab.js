@@ -4,11 +4,25 @@ Ext.define('kdApp.view.MainHomeTab', {
     requires: ['Ext.form.FieldSet', 'Ext.form.Password', 'Ext.Label', 'Ext.Img', 'Ext.util.DelayedTask'],
     config: {
         //title: 'Login',
-        items: [          
+        items: [ 
+        	{
+                xtype: 'label',
+                html: 'Login failed. Please enter the correct credentials.',
+                itemId: 'signInFailedLabel',
+                hidden: true,
+                hideAnimation: 'fadeOut',
+                showAnimation: 'fadeIn',
+                style: 'color:#990000;margin:5px 0px;'
+            },         
             {
                 xtype: 'fieldset',
                 title: 'Login',
                 items: [
+                	// {
+//                 		xtype: 'component',
+// //                 		html: './resources/',
+//                 		html: '<center><img height="50%" width="10%"  src="./resources/startup/320x460.jpg" /></center>',
+//                 	},
                     {
                         xtype: 'textfield',
                         placeHolder: 'Username',
