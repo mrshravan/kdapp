@@ -10,10 +10,12 @@ Ext.define('kdApp.view.Main', {
 													name : 'nav_btn',
 													iconCls : 'list',
 													ui : 'plain'
-												},{
-													xtype : 'label',
-													html : 'Kids Diary',	
-												}]
+												},
+												// {
+// 													xtype : 'label',
+// 													html : 'Kids Diary',	
+// 												}
+												]
 										},
 										{
 											xtype: 'mainhometab',
