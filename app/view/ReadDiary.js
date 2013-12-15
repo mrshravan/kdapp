@@ -1,19 +1,14 @@
 Ext.define('kdApp.view.ReadDiary', {
-    extend: 'Ext.Container',
+    extend: 'Ext.Panel',
     alias: 'widget.readdiaryview',
 	fullscreen: true,
 	
 	config: {			
 			items: [ 
 					{
-						xtype: 'container',
-						// top:     60,
-						//left:    60,
-						 height:   1050,
-						 width:    300,
-					 
+						xtype: 'panel',
+						 height:   10050,
 						 layout: 'vbox',  
-						 
 						 scrollable: true,
 						 scroll: 'vertical',
 						 items: [
@@ -22,10 +17,7 @@ Ext.define('kdApp.view.ReadDiary', {
 							   items: [
 									{
 										xtype: 'image',
-										// src: './resources/images/nitya.jpg',
-// 										// height:  '350px',
-// // 										width:   '400px',
-										src: Ext.Viewport.getOrientation() == 'portrait' ? './resources/images/nitya.jpg' : './resources/images/nitya.jpg',
+										 src: Ext.Viewport.getOrientation() == 'portrait' ? './resources/images/nitya.jpg' : './resources/images/nitya.jpg',
 										style: Ext.Viewport.getOrientation() == 'portrait' ? 'width:280px;height:200px;margin:auto' : 'width:150px;height:150px;margin:auto'
 									},
 									{

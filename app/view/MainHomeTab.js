@@ -10,7 +10,6 @@ Ext.define('kdApp.view.MainHomeTab', {
                 xtype: 'fieldset',
                 title: 'Login',
                 items: [
-                	
                     {
                         xtype: 'textfield',
                         placeHolder: 'Username',

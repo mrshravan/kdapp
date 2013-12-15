@@ -1,22 +1,26 @@
 Ext.define('kdApp.view.Viewport', {
 				extend: 'Ext.Panel',
 				xtype: 'viewportpage',
-				requires: [
-				'Ext.TitleBar',
-				],
+				
 				config: {
 								fullscreen: true,
-								layout: 'hbox',
+								layout: 'card',
 								items : [
 								{
-									xtype : 'main',
-									cls: 'slide',
-									width: '100%'												
-								}, 
+									xtype : 'maincard',	
+								},
 								{
-									xtype : 'navigation',
-									width : 250
+									xtype: 'readdiarycard'
+									
+								},
+								{
+									xtype: 'writediaryview'
+								},
+								{
+									xtype: 'label',
+									html: 'Share Diary'
 								}
+								
 								]
 				}
 });

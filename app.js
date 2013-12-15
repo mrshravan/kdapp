@@ -29,7 +29,7 @@ Ext.application({
 		'Ext.carousel.Carousel'
     ],
 
-    views: ['Viewport','Main','Navigation','ReadDiary','WriteDiary','MainHomeTab'],
+    views: ['Viewport','MainCard','Navigation','ReadDiaryCard','ReadDiary','WriteDiaryCard','WriteDiary','ShareDiary','ShareDiaryCard','MainHomeTab'],
 	stores: ['MenuItems'],
     models: ['MenuItems'],			
 	controllers : ['App'],

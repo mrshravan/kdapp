@@ -2,7 +2,7 @@ Ext.define('kdApp.controller.App',{
 				extend: 'Ext.app.Controller',    
 				config:{
 								refs:{
-												main : 'main',
+// 												main : 'main',
 												navBtn : 'button[name="nav_btn"]'
 								},				
 								control : {
@@ -13,23 +13,17 @@ Ext.define('kdApp.controller.App',{
 																itemtap : function(list, index, target, record){
 																				this.toggleNav();
 																				var mId = record.get('menuItemId');
-																				var comp = Ext.ComponentQuery.query('mainhometab')[0];
-																				console.log(comp);
+																				var comp = Ext.ComponentQuery.query('viewportpage')[0];
+																				console.log('vieportpage comp:'+comp);
 																				comp.setHtml('');
 																				if(mId == 'hme'){
-																					comp.getActiveItem().destroy();
-																					comp.setActiveItem('mainhometab');
+																					comp.setActiveItem('maincard');
 																				}else if(mId =='wd'){
-																					comp.getActiveItem().destroy();
-																					comp.setActiveItem('writediaryview');
-
+																					comp.setActiveItem('writediarycard');
 																				}else if(mId=='rd'){
-																					//comp.setHtml('Read Diary');
-																					comp.getActiveItem().destroy();						
-																					comp.setActiveItem('readdiaryview');																					
+																					comp.setActiveItem('readdiarycard');																					
 																				}else if(mId=='sd'){
-																					comp.getActiveItem().destroy();
-																					comp.setHtml('Share Diary');
+																					comp.setActiveItem('sharediarycard');
 																											
 																				}
 																}
@@ -46,15 +40,24 @@ Ext.define('kdApp.controller.App',{
 				 * Toggle the slide navogation view
 				 */
 				toggleNav : function(){
-								var me = this,
-								mainEl = me.getMain().element;
+								var comp = Ext.ComponentQuery.query('viewportpage')[0];
+								var actItem = comp.getActiveItem();
+								console.log('active panel: '+actItem);
+								var me = actItem;
+								console.log('me'+me);
+								var id = '#'+actItem.id+'panel';
+								console.log('panel id: '+id);
+								var panel =  Ext.ComponentQuery.query(id)[0];
+								console.log('panel:'+panel);
+								var mainEl = panel.element;
+								console.log('mainEl:'+mainEl);
 								
 								if (mainEl.hasCls('out')) {
 												mainEl.removeCls('out').addCls('in'); 
-												me.getMain().setMasked(false);
+												//me.setMasked(false);
 								} else {
 												mainEl.removeCls('in').addCls('out');  
-												me.getMain().setMasked(true);
+												//me.setMasked(true);
 								}
 				}
 });
