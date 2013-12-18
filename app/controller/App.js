@@ -54,10 +54,10 @@ Ext.define('kdApp.controller.App',{
 								
 								if (mainEl.hasCls('out')) {
 												mainEl.removeCls('out').addCls('in'); 
-												//me.setMasked(false);
+												panel.setMasked(false);
 								} else {
 												mainEl.removeCls('in').addCls('out');  
-												//me.setMasked(true);
+												panel.setMasked(true);
 								}
 				}
 });

@@ -1,24 +1,24 @@
-Ext.define('kdApp.view.ReadDiaryCard', {
-				extend: 'Ext.Container',
-				xtype: 'readdiarycard',
+Ext.define('kdApp.view.LoginCard', {
+				extend: 'Ext.Panel',
+				xtype: 'logincard',
 				requires: [
 				'Ext.TitleBar',
 				],
-				id: 'readdiarycard',
-
+				id: 'logincard',
 				config: {
 								fullscreen: true,
 								layout: 'hbox',
+								
 								items : [
 								{
 									xtype : 'panel',
-									id: 'readdiarycardpanel',
+									id: 'logincardpanel',
 									cls: 'slide',
 									width: '100%',
 									layout: 'vbox',
-									// styleHtmlContent:'true',
-// 									scrollable:'false',
-// 									style: 'background:url(./resources/images/raj_son.jpg);background-repeat:no-repeat;background-size:100% 100%;',
+									styleHtmlContent:'true',
+									scrollable:'false',
+									style: 'background:url(./resources/images/raj_son.jpg);background-repeat:no-repeat;background-size:100% 100%;',
 									items : [
 												{
 													xtype : 'titlebar',
@@ -31,7 +31,7 @@ Ext.define('kdApp.view.ReadDiaryCard', {
 															]
 												},
 												{
-													xtype: 'readdiaryview',
+													xtype: 'loginview',
 												}
 											]//itm
 								}, 

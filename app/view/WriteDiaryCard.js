@@ -16,6 +16,7 @@ Ext.define('kdApp.view.WriteDiaryCard', {
 									cls: 'slide',
 									width: '100%',
 									layout: 'vbox',
+									
 									items : [
 												{
 													xtype : 'titlebar',

@@ -1,45 +1,31 @@
 Ext.define('kdApp.view.MainHomeTab', {
     extend: 'Ext.Panel',
-    xtype: "mainhometab",
-    requires: ['Ext.form.FieldSet', 'Ext.form.Password', 'Ext.Label', 'Ext.Img', 'Ext.util.DelayedTask'],
+    xtype: 'mainhometab',
+    
     config: {
-        //title: 'Login',
+        title: 'Login',
+        layout: 'vbox',
+        
+
         items: [ 
         	        
             {
-                xtype: 'fieldset',
-                title: 'Login',
-                items: [
-                    {
-                        xtype: 'textfield',
-                        placeHolder: 'Username',
-                        itemId: 'userNameTextField',
-                        name: 'userNameTextField',
-                        required: true
-                    },
-                    {
-                        xtype: 'passwordfield',
-                        placeHolder: 'Password',
-                        itemId: 'passwordTextField',
-                        name: 'passwordTextField',
-                        required: true
-                    }
-                    ,
-                    {
-                    	xtype:'spacer',
-                    	height:'10px',
-                    },
-					{
-						xtype: 'button',
-						itemId: 'logInButton',
-						ui: 'action',
-						//padding: '10px',
-						//width: '25%',
-						//centered: true,
-						//iconCls: 'fa fa-facebook',
-						text: 'Log In'
-					}
-                ]
+            	xtype: 'label',
+            	html: '<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>',
+
+            },
+            {
+                //docked: 'bottom',
+				xtype: 'button',
+				itemId: 'logInButton',
+				//ui: 'action',
+				//padding: '10px',
+				//width: '50%',
+				centered: true,
+				// iconCls: 'fa-facebook fa-2x'
+// 				html: '<i class="fa-facebook fa-2x">Login Using Facebook</i>',
+				text: 'Log In Using Facebook'
+					
             }
          ],
         listeners: [{
@@ -49,35 +35,10 @@ Ext.define('kdApp.view.MainHomeTab', {
         }]
     },
     onLogInButtonTap: function () {
-
-        var me = this,
-            usernameField = me.down('#userNameTextField'),
-            passwordField = me.down('#passwordTextField'),
-            label = me.down('#signInFailedLabel'),
-            username = usernameField.getValue(),
-            password = passwordField.getValue();
-
-        label.hide();
-
-        // Using a delayed task in order to give the hide animation above
-        // time to finish before executing the next steps.
-        var task = Ext.create('Ext.util.DelayedTask', function () {
-
-            label.setHtml('');
-
-            me.fireEvent('signInCommand', me, username, password);
-
-            usernameField.setValue('');
-            passwordField.setValue('');
-        });
-
-        task.delay(500);
+		var comp = Ext.ComponentQuery.query('viewportpage')[0];
+        comp.setActiveItem('logincard');
 
     },
-    showSignInFailedMessage: function (message) {
-        var label = this.down('#signInFailedLabel');
-        label.setHtml(message);
-        label.show();
-    }
+    
 });
 

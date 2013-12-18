@@ -16,6 +16,9 @@ Ext.define('kdApp.view.ShareDiaryCard', {
 									cls: 'slide',
 									width: '100%',
 									layout: 'vbox',
+									// styleHtmlContent:'true',
+// 									scrollable:'false',
+// 									style: 'background:url(./resources/images/raj_son.jpg);background-repeat:no-repeat;background-size:100% 100%;',
 									items : [
 												{
 													xtype : 'titlebar',
