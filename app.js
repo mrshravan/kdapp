@@ -55,6 +55,7 @@ Ext.application({
     launch: function() {
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
+        this.facebookAppId = '203132249872227',
 
         // Initialize the main view
         Ext.Viewport.add(Ext.create('kdApp.view.Viewport'));
