@@ -10,20 +10,6 @@ Ext.define('kdApp.view.MainHomeTab', {
         },
 
         items: [ 
-        	        
-            // {
-//             	xtype: 'label',
-//             	html: '<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>',
-// 
-//             },
-            // {
-// 				xtype: 'button',
-// 				itemId: 'logInButton',
-// 
-// 				centered: true,
-// 				text: 'Log In Using Facebook'
-// 					
-//             }
          ],
         listeners: [{
             delegate: '#logInButton',
@@ -54,12 +40,10 @@ Ext.define('kdApp.view.MainHomeTab', {
             '<h2>Welcome to Kiddy Diary</h2>',
             '<p>In this app, parents write kids diary till the kids grown to a age where they can remember the little things they do.</p>',
             '<p>That means, Kiddy Diary tells grown ups what they did in their kiddy days. To start writing your kids diary you must sign in with your Facebook account.</p>',
-            //'<a class="fb-facepile" href="https://m.facebook.com/dialog/oauth?' + redirectUrl + '"></a>',
             '<a class="fb-login-button" href="https://m.facebook.com/dialog/oauth?' + redirectUrl + '"></a>',            
-            //'<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>'
         ].join(''));
 
-         FB.XFBML.parse(document.getElementById('splash'));
+         //FB.XFBML.parse(document.getElementById('splash'));
     }
     
 });

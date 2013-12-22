@@ -1,0 +1,36 @@
+Shravans-MacBook-Air:cert Shravan$ keytool -genkey -v -keystore mr_shravan_rk.keystore -alias mr.shravan.kdapp -keyalg RSA -keysize 2048 -validity 10000
+Enter keystore password:  
+Re-enter new password: 
+What is your first and last name?
+  [Unknown]:  Shravan Talupula
+What is the name of your organizational unit?
+  [Unknown]:  Season Innovation Apps
+What is the name of your organization?
+  [Unknown]:  Season Innovation
+What is the name of your City or Locality?
+  [Unknown]:  Marietta
+What is the name of your State or Province?
+  [Unknown]:  Georgia
+What is the two-letter country code for this unit?
+  [Unknown]:  US
+Is CN=Shravan Talupula, OU=Season Innovation Apps, O=Season Innovation, L=Marietta, ST=Georgia, C=US correct?
+  [no]:  
+
+Shravans-MacBook-Air:apktool1.5.2 Shravan$ java -jar apktool.jar d mrshravan_kdapp-release.apk
+I: Baksmaling...
+I: Loading resource table...
+I: Loaded.
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /Users/Shravan/Library/apktool/framework/1.apk
+I: Loaded.
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Done.
+I: Copying assets and libs...
+
+
+
+Shravans-MacBook-Air:cert Shravan$ keytool -exportcert -alias androiddebugkey -keystore /Users/Shravan/MyWork/sw/apache-tomcat-8.0.0-RC5/webapps/kdapp/resources/cert/mr_shravan_rk.keystore | openssl sha1 -binary | openssl base64
+Enter keystore password:  password
+xSLzBBuLJunOQPB89rtzM54FXx4=
