@@ -25,6 +25,11 @@ Ext.define('kdApp.view.WriteDiaryCard', {
 																name : 'nav_btn',
 																iconCls : 'list',
 																ui : 'plain'
+															},
+															{
+																align: 'right',
+																iconCls:'more',
+																
 															}
 															]
 												},

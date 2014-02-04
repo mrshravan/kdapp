@@ -29,6 +29,6 @@ Ext.define('kdApp.view.ReadDiary', {
 						}]//items - 2
 					}]
 						
-			}//itmes
+	}//config
 			
 });

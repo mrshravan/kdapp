@@ -14,7 +14,7 @@ Ext.define('kdApp.view.Viewport', {
 									
 								},
 								{
-									xtype: 'writediaryview'
+									xtype: 'writediarycard'
 								},
 								{
 									xtype: 'label',

@@ -31,7 +31,7 @@ Ext.define('kdApp.view.MainCard', {
 																ui : 'plain'
 															},{
 																xtype:'label',
-																html:'Kiddy Diary',
+																html:'Kidiography',
 															}
 															]
 												},
