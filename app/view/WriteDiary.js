@@ -7,19 +7,11 @@ Ext.define('kdApp.view.WriteDiary', {
 			items: [ 
 					{
 						 xtype: 'panel',
-						 height:10000000,
-						 //layout: 'fit',  
-// 						 scrollable: true,
-						//  scrollable: {
-// 							direction: 'vertical',
-// 							directionLock: false
-// 						},
+						 height:1000,
 
 						 items: [
 							{
 							   xtype: 'fieldset',
-							   // scrollable: true,
-// 								height:100,
 							   items: [
 									{
 										xtype: 'image',
