@@ -9,13 +9,19 @@ Ext.define('kdApp.view.WriteDiaryCard', {
 				config: {
 								fullscreen: true,
 								layout: 'hbox',
+								
 								items : [
 								{
 									xtype : 'panel',
 									id: 'writediarycardpanel',
 									cls: 'slide',
 									width: '100%',
+									height: '100%',
 									layout: 'vbox',
+									scrollable: {
+										direction: 'vertical',
+										directionLock: false
+									},
 									
 									items : [
 												{
@@ -34,6 +40,7 @@ Ext.define('kdApp.view.WriteDiaryCard', {
 															]
 												},
 												{
+												
 													xtype: 'writediaryview',
 												}
 											]//itm

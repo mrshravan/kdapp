@@ -1,19 +1,25 @@
 Ext.define('kdApp.view.WriteDiary', {
     extend: 'Ext.Panel',
     alias: 'widget.writediaryview',
-	fullscreen: true,
+	//fullscreen: true,
         
     config: {			
 			items: [ 
 					{
 						 xtype: 'panel',
-						 height:100500,
-						 layout: 'fit',  
-						 scrollable: true,
-						 scroll: 'vertical',
+						 height:10000000,
+						 //layout: 'fit',  
+// 						 scrollable: true,
+						//  scrollable: {
+// 							direction: 'vertical',
+// 							directionLock: false
+// 						},
+
 						 items: [
 							{
-							   xtype: 'fieldset',							
+							   xtype: 'fieldset',
+							   // scrollable: true,
+// 								height:100,
 							   items: [
 									{
 										xtype: 'image',
