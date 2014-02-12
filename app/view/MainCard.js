@@ -20,7 +20,9 @@ Ext.define('kdApp.view.MainCard', {
 									layout: 'vbox',
 									styleHtmlContent:'true',
 									scrollable:'false',
+									store: 'FlickrStore',
 									style: 'background:url(./resources/images/raj_son.jpg);background-repeat:no-repeat;background-size:100% 100%;',
+									//style: 'background:url("http://src.sencha.io/{[Ext.Viewport.getOrientation()]}/{photo_url}");background-repeat:no-repeat;background-size:100% 100%;',
 									items : [
 												{
 													xtype : 'titlebar',

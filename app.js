@@ -14,11 +14,13 @@
 //@require @packageOverrides
 
 //<debug>
-//Ext.Loader.setPath({
-//    'Ext': 'touch/src',
-//    'kdApp': 'app'
-//});
+Ext.Loader.setPath({
+'Ext.data.proxy.Flickr': 'lib/FlickrProxy.js'
+});
 //</debug>
+
+Ext.ClassManager.setAlias('Ext.data.proxy.Flickr', 'proxy.flickr');
+
 
 Ext.application({
     name: 'kdApp',
@@ -26,12 +28,13 @@ Ext.application({
     requires: [
         'Ext.MessageBox',
         'Ext.TitleBar',
-		'Ext.carousel.Carousel'
+		'Ext.carousel.Carousel',
+		'Ext.data.proxy.Flickr'
     ],
 
     views: ['Viewport','Login','LoginCard','MainCard','Navigation','ReadDiaryCard','ReadDiary','WriteDiaryCard','WriteDiary','ShareDiary','ShareDiaryCard','MainHomeTab'],
-	stores: ['MenuItems','Stories'],
-    models: ['MenuItems','Stories'],			
+	stores: ['FlickrStore','MenuItems','Stories'],
+    models: ['FlickrModel','MenuItems','Stories'],			
 	controllers : ['App'],
 
     icon: {

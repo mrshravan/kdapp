@@ -17,10 +17,6 @@ Ext.define('kdApp.view.ReadDiaryCard', {
 									width: '100%',
 									height:'100%',
 									layout: 'vbox',
-									scrollable: {
-										direction: 'vertical',
-										directionLock: false
-									},
 									items : [
 												{
 													xtype : 'titlebar',
@@ -44,7 +40,6 @@ Ext.define('kdApp.view.ReadDiaryCard', {
 												},
 												{
 													xtype: 'readdiaryview',
-													width : '100%',
 													height: '100%',
 												}
 											]//itm
