@@ -15,10 +15,12 @@ Ext.define('kdApp.view.ReadDiaryCard', {
 									id: 'readdiarycardpanel',
 									cls: 'slide',
 									width: '100%',
+									height:'100%',
 									layout: 'vbox',
-									// styleHtmlContent:'true',
-// 									scrollable:'false',
-// 									style: 'background:url(./resources/images/raj_son.jpg);background-repeat:no-repeat;background-size:100% 100%;',
+									scrollable: {
+										direction: 'vertical',
+										directionLock: false
+									},
 									items : [
 												{
 													xtype : 'titlebar',
@@ -27,11 +29,23 @@ Ext.define('kdApp.view.ReadDiaryCard', {
 																name : 'nav_btn',
 																iconCls : 'list',
 																ui : 'plain'
+															},
+															{
+																align: 'center',
+																xtype: 'label',
+																html : 'Read Diary'
+															},
+															{
+																align: 'right',
+																iconCls:'more',
+																
 															}
 															]
 												},
 												{
 													xtype: 'readdiaryview',
+													width : '100%',
+													height: '100%',
 												}
 											]//itm
 								}, 

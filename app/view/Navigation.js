@@ -9,10 +9,6 @@ Ext.define('kdApp.view.Navigation', {
 					grouped: true,
 					itemTpl: '{menuItem}',
 					store: 'MenuItems',
-					// listeners: {
-									// select: function(view, record) {
-										// Ext.Msg.alert('You selected ' + record.get('menuItem'));
-									// }
-								// }
+					
 				}
 });

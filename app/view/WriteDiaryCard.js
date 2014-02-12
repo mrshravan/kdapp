@@ -33,6 +33,11 @@ Ext.define('kdApp.view.WriteDiaryCard', {
 																ui : 'plain'
 															},
 															{
+																align: 'center',
+																xtype: 'label',
+																html : 'Write Diary'
+															},
+															{
 																align: 'right',
 																iconCls:'more',
 																
@@ -42,6 +47,8 @@ Ext.define('kdApp.view.WriteDiaryCard', {
 												{
 												
 													xtype: 'writediaryview',
+													width : '100%',
+													height: '100%',
 												}
 											]//itm
 								}, 

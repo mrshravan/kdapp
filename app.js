@@ -30,8 +30,8 @@ Ext.application({
     ],
 
     views: ['Viewport','Login','LoginCard','MainCard','Navigation','ReadDiaryCard','ReadDiary','WriteDiaryCard','WriteDiary','ShareDiary','ShareDiaryCard','MainHomeTab'],
-	stores: ['MenuItems'],
-    models: ['MenuItems'],			
+	stores: ['MenuItems','Stories'],
+    models: ['MenuItems','Stories'],			
 	controllers : ['App'],
 
     icon: {
