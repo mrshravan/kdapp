@@ -22,5 +22,15 @@ Ext.define('kdApp.view.Viewport', {
 								}
 								
 								]
+				},
+				listeners:{
+					show: function(element, options) {
+						//this.callParent();
+						var comp = Ext.ComponentQuery.query('maincardpanel')[0];
+						console.log("Loading the store:"+comp);
+						//var c = Ext.getStore('flickrstore').getAt(0);
+						//console.log("flickrstore :"+c);
+					}
 				}
+				
 });

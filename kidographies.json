@@ -1,0 +1,59 @@
+{
+    "kidiographies": [
+        {
+            "profiles": [
+                {
+                    "name": "Nitya",
+                    "id": "1",
+                    "emailID": "ntalupula@gmail.com",
+                    "address": "Atlanta",
+                    "stories": [
+                        {
+                            "storyID": "1",
+                            "incident": "Birth day",
+                            "photos": [
+                                {
+                                    "id": "1",
+                                    "comments": "comments"
+                                },
+                                {
+                                    "id": "1",
+                                    "comments": "comments"
+                                }
+                            ]
+                        },
+                        {
+                            "storyID": "2",
+                            "incident": "Hyderabad to Nandyal",
+                            "photos": [
+                                {
+                                    "id": "1",
+                                    "comments": "comments"
+                                },
+                                {
+                                    "id": "2",
+                                    "comments": "comments"
+                                }
+                            ]
+                        },
+                        {
+                            "storyID": "3",
+                            "incident": "Nandyal to Hyderabad",
+                            "photos": [
+                                {
+                                    "id": "1",
+                                    "comments": "comments"
+                                },
+                                {
+                                    "id": "2",
+                                    "comments": "comments"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {}
+            ]
+        }
+    ]
+}

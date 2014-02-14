@@ -9,11 +9,7 @@ Ext.define('kdApp.view.ShareDiary', {
 		itemTpl: Ext.create('Ext.XTemplate',
 		 '<div>',
 		 	'<center>',
-		 		//'<table border=1>',
-		 			//'<tr>',
 		 				'<img src="{imgPath}/profileID-{profileID}/stories/{storyID}/{photoURL}" height="200" width="250"/><br>',
-			 		//'</tr>',
-			 		//'<tr>',
 			 			'{comments}<br/><br/>',
 			 			
 			 			'<align ="right">Share: </align>',
@@ -22,8 +18,6 @@ Ext.define('kdApp.view.ShareDiary', {
 			 			'<i class="fa fa-twitter"></i>',
 			 			'&nbsp;&nbsp;&nbsp;',			 			
 			 			'<i class="fa fa-google-plus"></i>',
-		 			//'</tr>',
-		 		//'</table>',
 		 	'</center>',
 		 '</div>'
 		 ),

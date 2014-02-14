@@ -12,8 +12,6 @@ Ext.define('kdApp.view.WriteDiary', {
 						 items: [
 							{
 							   xtype: 'fieldset',
-							   //border: 2,
-							   //style: 'border-color: blue; border-style: solid;',
 							   items: [
 										{
 							   				xtype: 'fieldset',
@@ -25,7 +23,6 @@ Ext.define('kdApp.view.WriteDiary', {
 												},
 												{
 													xtype: 'label',
-													//flex: 2,
 													html: '<center>This photo is taken in Tenessay, USA. This time you, me and your father all went to accompany your father clients visit. This is on the way back to home to atlanta</center>'
 												},
 												]//items - 1

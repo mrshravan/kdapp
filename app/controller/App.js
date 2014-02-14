@@ -3,9 +3,13 @@ Ext.define('kdApp.controller.App',{
 				config:{
 								refs:{
 // 												main : 'main',
-												navBtn : 'button[name="nav_btn"]'
+												navBtn : 'button[name="nav_btn"]',
+												maincard:'maincardpanel'
 								},				
 								control : {
+												maincard:{
+													tap: 'onMainCardPainted'
+												},
 												navBtn : {
 																tap : 'toggleNav',
 												},												
@@ -14,7 +18,6 @@ Ext.define('kdApp.controller.App',{
 																				this.toggleNav();
 																				var mId = record.get('menuItemId');
 																				var comp = Ext.ComponentQuery.query('viewportpage')[0];
-																				console.log('vieportpage comp:'+comp);
 																				comp.setHtml('');
 																				if(mId == 'hme'){
 																					comp.setActiveItem('maincard');
@@ -29,12 +32,12 @@ Ext.define('kdApp.controller.App',{
 																}
 
 												},
-												
-												
-        
 								}
 				},
-		
+				onMainCardPainted:function(){
+					console.log("onMainCardPainted");
+				
+				},
 				
 				/**
 				 * Toggle the slide navogation view
@@ -42,15 +45,10 @@ Ext.define('kdApp.controller.App',{
 				toggleNav : function(){
 								var comp = Ext.ComponentQuery.query('viewportpage')[0];
 								var actItem = comp.getActiveItem();
-								console.log('active panel: '+actItem);
 								var me = actItem;
-								console.log('me'+me);
 								var id = '#'+actItem.id+'panel';
-								console.log('panel id: '+id);
 								var panel =  Ext.ComponentQuery.query(id)[0];
-								console.log('panel:'+panel);
 								var mainEl = panel.element;
-								console.log('mainEl:'+mainEl);
 								
 								if (mainEl.hasCls('out')) {
 												mainEl.removeCls('out').addCls('in'); 

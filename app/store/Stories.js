@@ -17,5 +17,5 @@ Ext.define('kdApp.store.Stories', {
             
             
         ]
-    }
+    },
 });

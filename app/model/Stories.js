@@ -1,7 +1,15 @@
 Ext.define('kdApp.model.Stories', {
     extend: 'Ext.data.Model',
     config: {
-        fields: ['pk','profileID','storyID', 'dttm','imgPath','photoURL','videoURL','comments']
+        fields: [
+        	'pk',
+        	'profileID',
+        	'storyID', 
+        	'dttm',
+        	'imgPath',
+        	'photoURL',
+        	'videoURL',
+        	'comments']
        
     },
 
