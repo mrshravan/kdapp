@@ -2,16 +2,18 @@ Ext.define('kdApp.view.ReadDiary', {
     extend: 'Ext.List',
     xtype: 'readdiaryview',
     requires: ['kdApp.store.FlickrStore'],
-    config: {
-        
-        //itemTpl: '<img src="http://src.sencha.io/{[Ext.Viewport.getOrientation()]}/{photo_url}" />',
+     config: {
         itemTpl: Ext.create('Ext.XTemplate',
 		 '<div><center><img src="{photo_url}" height="200" width="250"/></center><br></div>'
 		 ),
-        title: 'Featured',
         store: 'FlickrStore',
-
     }
-    	
-			
+    
+    // requires: ['kdApp.store.Kidiography'],
+//     config: {
+//         itemTpl: Ext.create('Ext.XTemplate',
+// 		 '<div><center><img src="{profileName}" height="200" width="250"/>{profileName}</center><br></div>'
+// 		 ),
+//         store: 'Kidiography',
+//     }			
 });

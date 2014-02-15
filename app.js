@@ -33,8 +33,8 @@ Ext.application({
     ],
 
     views: ['Viewport','Login','LoginCard','MainCard','Navigation','ReadDiaryCard','ReadDiary','WriteDiaryCard','WriteDiary','ShareDiary','ShareDiaryCard','MainHomeTab'],
-	stores: ['FlickrStore','MenuItems','Stories'],
-    models: ['FlickrModel','MenuItems','Stories'],			
+	stores: ['FlickrStore','Kidiography','MenuItems','Stories'],
+    models: ['FlickrModel','Kidiography','MenuItems','Stories'],			
 	controllers : ['App'],
 
     icon: {

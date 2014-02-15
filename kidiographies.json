@@ -1,10 +1,9 @@
-{
-    "kidiographies": [
+
         {
-            "profiles": [
+            "kidiographies": [
                 {
-                    "name": "Nitya",
-                    "id": "1",
+                    "profileID": "1",
+                    "profileName": "Nitya",
                     "emailID": "ntalupula@gmail.com",
                     "address": "Atlanta",
                     "stories": [
@@ -13,11 +12,11 @@
                             "incident": "Birth day",
                             "photos": [
                                 {
-                                    "id": "1",
+                                    "photoID": "1",
                                     "comments": "comments"
                                 },
                                 {
-                                    "id": "1",
+                                    "photoID": "1",
                                     "comments": "comments"
                                 }
                             ]
@@ -27,13 +26,10 @@
                             "incident": "Hyderabad to Nandyal",
                             "photos": [
                                 {
-                                    "id": "1",
+                                    "photoID": "1",
                                     "comments": "comments"
                                 },
-                                {
-                                    "id": "2",
-                                    "comments": "comments"
-                                }
+                                
                             ]
                         },
                         {
@@ -41,11 +37,11 @@
                             "incident": "Nandyal to Hyderabad",
                             "photos": [
                                 {
-                                    "id": "1",
+                                    "photoID": "1",
                                     "comments": "comments"
                                 },
                                 {
-                                    "id": "2",
+                                    "photoID": "2",
                                     "comments": "comments"
                                 }
                             ]
@@ -55,5 +51,4 @@
                 {}
             ]
         }
-    ]
-}
+    
