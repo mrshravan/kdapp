@@ -7,8 +7,7 @@ Ext.define('kdApp.view.ShareDiary', {
 		title: 'Share Diary',
 
 		itemTpl: Ext.create('Ext.XTemplate',
-		'<div class="x-container x-unsized x-form-fieldset" id="ext-fieldset-1x">',
-
+//		'<div class="x-container x-unsized x-form-fieldset" id="ext-fieldset-1x">',
 		 '  <div class="x-inner x-form-fieldset-inner" id="ext-element-134x">',
 			  '<div class="x-container x-unsized x-form-fieldset" id="ext-fieldset-2x">',
 				'<div class="x-inner x-form-fieldset-inner" id="ext-label-5y">',
@@ -18,7 +17,7 @@ Ext.define('kdApp.view.ShareDiary', {
 					 	
 					 '</div>',
 				  '</div>',
-			  	  '<br/>',	
+			  	  //'<br/>',	
 				 '<div class="x-inner x-form-fieldset-inner" id="ext-element-135x">',
 					'<div class="x-unsized x-img x-img-image x-img-background x-paint-monitored x-size-monitored" id="ext-image-1x" style="width: 300px; height: 200px; margin: auto; background-image: url({imgPath}/profileID-{profileID}/stories/{storyID}/{photoURL});">',
 					   '<div class="x-paint-monitor overflowchange" />',
@@ -45,7 +44,7 @@ Ext.define('kdApp.view.ShareDiary', {
 // 			 '</div>',
 // 		  '</div>',
 		
-				 		'<div align="right">',
+			   '<div align="right">',
 					//'<input type="button" style="fa fa-facebook" value="share">',
 						'<center>',
 						'<input type="button" style="width:33%;height:200%;margin:auto;" value="share">',
@@ -55,7 +54,7 @@ Ext.define('kdApp.view.ShareDiary', {
 						'</center>'	,				
 				'</div>',
 			'</div>',
-			'<br/>',			
+			//'<br/>',			
 			'<div class="x-inner x-form-fieldset-inner" id="ext-label-5y">',
 				 '<div class="x-innerhtml" id="ext-element-136y">',
 					 	'<img src="http://farm4.staticflickr.com/3704/12536827894_7d2931b3c7.jpg" height="50" width="50" style="float:left;margin:0px 0px 1px 2px;">',
@@ -63,14 +62,6 @@ Ext.define('kdApp.view.ShareDiary', {
 				 '</div>',
 			  '</div>'
 			
-// 		'<div>',
-// 			'<align ="left">Share: </align>',
-// 			'<i class="fa fa-facebook"></i>',
-// 			'&nbsp;&nbsp;&nbsp;',
-// 			'<i class="fa fa-twitter"></i>',
-// 			'&nbsp;&nbsp;&nbsp;',			 			
-// 			'<i class="fa fa-google-plus"></i>',
-// 		'</div>'
 		 ),
 	
 		store: 'Stories',
