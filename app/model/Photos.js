@@ -4,9 +4,9 @@ Ext.define('kdApp.model.Photos', {
         fields: [
         	'photoID',
         	'incident'
-        	]
-       
+        	],
+       belongsTo: "kdApp.model.StoriesM"
     },
-	belongsTo: "kdApp.model.StoriesM"
+	
 
 });

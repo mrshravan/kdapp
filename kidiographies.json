@@ -1,54 +1,107 @@
-
+{
+    "kidiographies": [
         {
-            "kidiographies": [
+            "profileID": "1",
+            "profileName": "Nitya",
+            "emailID": "ntalupula@gmail.com",
+            "address": "Atlanta",
+            "stories": [
                 {
-                    "profileID": "1",
-                    "profileName": "Nitya",
-                    "emailID": "ntalupula@gmail.com",
-                    "address": "Atlanta",
-                    "stories": [
+                    "storyID": "1",
+                    "incident": "Birth day",
+                    "photos": [
                         {
-                            "storyID": "1",
-                            "incident": "Birth day",
-                            "photos": [
-                                {
-                                    "photoID": "1",
-                                    "comments": "comments"
-                                },
-                                {
-                                    "photoID": "1",
-                                    "comments": "comments"
-                                }
-                            ]
+                            "photoID": "1",
+                            "photoURL":"1.JPG",
+                            "comments": "comments"
                         },
                         {
-                            "storyID": "2",
-                            "incident": "Hyderabad to Nandyal",
-                            "photos": [
-                                {
-                                    "photoID": "1",
-                                    "comments": "comments"
-                                },
-                                
-                            ]
-                        },
-                        {
-                            "storyID": "3",
-                            "incident": "Nandyal to Hyderabad",
-                            "photos": [
-                                {
-                                    "photoID": "1",
-                                    "comments": "comments"
-                                },
-                                {
-                                    "photoID": "2",
-                                    "comments": "comments"
-                                }
-                            ]
+                            "photoID": "2",
+                            "photoURL":"2.JPG",                            
+                            "comments": "comments"
                         }
                     ]
                 },
-                {}
+                {
+                    "storyID": "2",
+                    "incident": "Hyderabad to Nandyal",
+                    "photos": [
+                        {
+                            "photoID": "1",
+                            "photoURL":"1.JPG",                            
+                            "comments": "comments"
+                        }
+                    ]
+                },
+                {
+                    "storyID": "3",
+                    "incident": "Nandyal to Hyderabad",
+                    "photos": [
+                        {
+                            "photoID": "1",
+                            "photoURL":"1.JPG",                            
+                            "comments": "comments"
+                        },
+                        {
+                            "photoID": "2",
+                            "photoURL":"2.JPG",                            
+                            "comments": "comments"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "profileID": "2",
+            "profileName": "Abhi",
+            "emailID": "ntalupula@gmail.com",
+            "address": "Atlanta",
+            "stories": [
+                {
+                    "storyID": "1",
+                    "incident": "Birth day",
+                    "photos": [
+                        {
+                            "photoID": "1",
+                            "photoURL":"1.JPG",
+                            "comments": "comments"
+                        },
+                        {
+                            "photoID": "2",
+                            "photoURL":"2.JPG",                            
+                            "comments": "comments"
+                        }
+                    ]
+                },
+                {
+                    "storyID": "2",
+                    "incident": "Hyderabad to Nandyal",
+                    "photos": [
+                        {
+                            "photoID": "1",
+                            "photoURL":"1.JPG",                            
+                            "comments": "comments"
+                        }
+                    ]
+                },
+                {
+                    "storyID": "3",
+                    "incident": "Nandyal to Hyderabad",
+                    "photos": [
+                        {
+                            "photoID": "1",
+                            "photoURL":"1.JPG",                            
+                            "comments": "comments"
+                        },
+                        {
+                            "photoID": "2",
+                            "photoURL":"2.JPG",                            
+                            "comments": "comments"
+                        }
+                    ]
+                }
             ]
         }
-    
+
+    ]
+}

@@ -3,13 +3,12 @@ Ext.define('kdApp.model.Kidiography', {
     requires: ['kdApp.model.StoriesM'],
     config: {
         fields: [
-        	'id',
-        	'name',
+        	'profileID',
+        	'profileName',
         	'emailID', 
         	'address'
-        	]
-    },
-    proxy: {
+        	],
+        proxy: {
             type: 'ajax',
             url: 'kidiographies.json',
             reader : {
@@ -19,6 +18,10 @@ Ext.define('kdApp.model.Kidiography', {
         },
         hasMany: {
             model: "kdApp.model.StoriesM",
+            name: 'stories',
             associationKey: 'stories'
-        }
+        },
+        autoLoad: true
+    }
+    
 });

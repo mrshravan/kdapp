@@ -6,12 +6,14 @@ Ext.define('kdApp.model.StoriesM', {
         fields: [
         	'storyID',
         	'incident'
-        	]
+        	],
+       	 hasMany: {
+			model: "kdApp.model.Photos",
+			name: 'photos',
+			associationKey: 'photos'
+		},
+		belongsTo: "kdApp.model.Kidiography"
+ 	
     },
-	hasMany: {
-		model: "kdApp.model.Photos",
-		associationKey: 'photos'
-	},
-	belongsTo: "kdApp.model.Kidiography"
 
 });

@@ -8,12 +8,6 @@ Ext.define('kdApp.view.ReadDiary', {
 		 ),
         store: 'FlickrStore',
     }
-    
-    // requires: ['kdApp.store.Kidiography'],
-//     config: {
-//         itemTpl: Ext.create('Ext.XTemplate',
-// 		 '<div><center><img src="{profileName}" height="200" width="250"/>{profileName}</center><br></div>'
-// 		 ),
-//         store: 'Kidiography',
-//     }			
+    			
 });
+
