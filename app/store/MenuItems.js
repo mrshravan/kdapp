@@ -7,8 +7,8 @@ Ext.define('kdApp.store.MenuItems', {
             return record.get('gruoupName');
         },
         data: [
-            { menuItemId:"wd", menuItem:"Kidiography-wd", gruoupName: "Kidiography",groupId:"1" },
-            { menuItemId:"sd", menuItem:"Sociography-sd", gruoupName: "Kidiography",groupId:"1" },
+            { menuItemId:"sd", menuItem:"Kidiography-wd", gruoupName: "Kidiography",groupId:"1" },
+            { menuItemId:"wd", menuItem:"Sociography-sd", gruoupName: "Kidiography",groupId:"1" },
             { menuItemId:"rd", menuItem:"Planography-rd", gruoupName: "Kidiography",groupId:"1" },
             { menuItemId:"hme", menuItem:"Abhi's Biography", gruoupName: "Biography",groupId:"2" },
             { menuItemId:"hme", menuItem:"Pradyumna's Biography", gruoupName: "Biography",groupId:"2" },

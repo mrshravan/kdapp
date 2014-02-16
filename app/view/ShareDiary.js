@@ -13,7 +13,7 @@ Ext.define('kdApp.view.ShareDiary', {
 			  '<div class="x-container x-unsized x-form-fieldset" id="ext-fieldset-2x">',
 				'<div class="x-inner x-form-fieldset-inner" id="ext-label-5y">',
 					 '<div class="x-innerhtml" id="ext-element-136y">',
-					 	'<img src="http://farm8.staticflickr.com/7433/12540787595_f255c2f146.jpg" height="50" width="50" style="float:left;border:1px dotted black;margin:0px 0px 1px 2px;">',
+					 	'<img src="http://farm8.staticflickr.com/7433/12540787595_f255c2f146.jpg" height="50" width="50" style="float:left;margin:0px 0px 1px 2px;">',
 					 	'&nbsp;<font align="top">Nagendra Talupula</font>',
 					 	
 					 '</div>',
@@ -58,7 +58,7 @@ Ext.define('kdApp.view.ShareDiary', {
 			'<br/>',			
 			'<div class="x-inner x-form-fieldset-inner" id="ext-label-5y">',
 				 '<div class="x-innerhtml" id="ext-element-136y">',
-					 	'<img src="http://farm4.staticflickr.com/3704/12536827894_7d2931b3c7.jpg" height="50" width="50" style="float:left;border:1px dotted black;margin:0px 0px 1px 2px;">',
+					 	'<img src="http://farm4.staticflickr.com/3704/12536827894_7d2931b3c7.jpg" height="50" width="50" style="float:left;margin:0px 0px 1px 2px;">',
 					 	'&nbsp;<font align="top">This is awesome</font>',
 				 '</div>',
 			  '</div>'
