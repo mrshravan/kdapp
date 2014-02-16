@@ -29,7 +29,7 @@ Ext.define('kdApp.view.ReadDiaryCard', {
 															{
 																align: 'center',
 																xtype: 'label',
-																html : 'Read Diary'
+																html : 'Planography'
 															},
 															{
 																align: 'right',

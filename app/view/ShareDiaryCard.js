@@ -29,7 +29,7 @@ Ext.define('kdApp.view.ShareDiaryCard', {
 															{
 																align: 'center',
 																xtype: 'label',
-																html : 'Share Diary'
+																html : 'Sociaography'
 															},
 															{
 																align: 'right',

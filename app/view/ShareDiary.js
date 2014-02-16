@@ -8,7 +8,14 @@ Ext.define('kdApp.view.ShareDiary', {
 
 		itemTpl: Ext.create('Ext.XTemplate',
 		'<div class="x-container x-unsized x-form-fieldset" id="ext-fieldset-1x">',
+
 		 '  <div class="x-inner x-form-fieldset-inner" id="ext-element-134x">',
+		 		'<div align="right">',
+					'<button class="fa fa-twitter">',
+					'<button class="fa fa-facebook">',
+
+				'</div>',
+
 			  '<div class="x-container x-unsized x-form-fieldset" id="ext-fieldset-2x">',
 				 '<div class="x-inner x-form-fieldset-inner" id="ext-element-135x">',
 					'<div class="x-unsized x-img x-img-image x-img-background x-paint-monitored x-size-monitored" id="ext-image-1x" style="width: 300px; height: 200px; margin: auto; background-image: url({imgPath}/profileID-{profileID}/stories/{storyID}/{photoURL});">',
@@ -28,20 +35,22 @@ Ext.define('kdApp.view.ShareDiary', {
 		   '</div>',
 		'</div>',
 		'<div>',		
-				'{comments}<br>',
+				'<h10>{comments}&nbsp;</h10><br>',
 		'</div>',
 // 		'<div class="x-inner x-form-fieldset-inner" id="ext-label-5y">',
 // 			 '<div class="x-innerhtml" id="ext-element-136y">',
 // 				'temp',
 // 			 '</div>',
 // 		  '</div>',
-			'<align ="right">Share: </align>',
+		'</div>',
+		'<div>',
+			'<br><align ="left">Share: </align>',
 			'<i class="fa fa-facebook"></i>',
 			'&nbsp;&nbsp;&nbsp;',
 			'<i class="fa fa-twitter"></i>',
 			'&nbsp;&nbsp;&nbsp;',			 			
-			'<i class="fa fa-google-plus"></i>'
-
+			'<i class="fa fa-google-plus"></i>',
+		'</div>'
 		 ),
 	
 		store: 'Stories',

@@ -35,7 +35,7 @@ Ext.define('kdApp.view.WriteDiaryCard', {
 															{
 																align: 'center',
 																xtype: 'label',
-																html : 'Write Diary'
+																html : 'Kidiography'
 															},
 															{
 																align: 'right',
