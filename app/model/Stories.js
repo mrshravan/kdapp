@@ -4,6 +4,7 @@ Ext.define('kdApp.model.Stories', {
         fields: [
         	'pk',
         	'profileID',
+        	'profileName',
         	'storyID', 
         	'dttm',
         	'imgPath',
@@ -18,6 +19,7 @@ Ext.define('kdApp.model.Stories', {
         names = [
             d.pk,
             d.profileID,
+            d.profileName,
             d.storyID,
             d.dttm,
             d.imgPath,
