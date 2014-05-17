@@ -13,7 +13,7 @@ Ext.define('kdApp.view.ShareDiary', {
 				'<div class="x-inner x-form-fieldset-inner" id="ext-label-5y">',
 					 '<div class="x-innerhtml" id="ext-element-136y">',
 					 	'<img src="http://farm8.staticflickr.com/7433/12540787595_f255c2f146.jpg" height="50" width="50" style="float:left;margin:0px 0px 1px 2px;">',
-					 	'&nbsp;<font align="top">Nagendra Talupula</font>',
+					 	'&nbsp;<font align="top">Mark Gibson</font>',
 					 	
 					 '</div>',
 				  '</div>',
